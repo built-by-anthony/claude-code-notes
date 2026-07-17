@@ -1,5 +1,8 @@
 site_name: AI Learning Notes
 site_description: Personal knowledge base for AI tools and concepts
+watch:
+  - docs
+dev_addr: 127.0.0.1:8000
 theme:
   name: material
   palette:

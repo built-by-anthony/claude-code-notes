@@ -14,19 +14,23 @@ If you find yourself explaining the same thing to Claude, that is a skill waitin
 
 ## Skills example - grilling skill -> SKILL.md 
 ### Skills Frontmatter example: 
+```yaml
 ---
 name: grilling
-description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses and `grill` trigger phrases. 
---- 
+description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.
+---
+``` 
 
 ## Skills Body example: 
+```
 Interview me relentlessly about every aspect of this until we reach a shared understanding. Walk down each branch of the decision tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer. 
 
-Ask the questions one at a time witing for feedback on each question before continuing. Asking multiple questions at once is bewildering. 
+Ask the questions one at a time waiting for feedback on each question before continuing. Asking multiple questions at once is bewildering. 
 
 If a *fact* can be found by exploring the environment (filesystem, tools, etc.), look it up rather than asking me. The *decisions*, though are mine - put each one to me and wait for my answer.
 
-Do not act on it until I confirm we have reached a shared understanding. 
+Do not act on it until I confirm we have reached a shared understanding.
+``` 
 
 #### Where Skills Live 
 - **Personal Skills**: go in `~/.claude/skills` (your home directory) - these are global 
@@ -55,26 +59,26 @@ Rule of thumb: if you find yourself explaining the same thing to Claude repeated
 mkdir -p ~./.claude/skills/pr-description
 ``` 
 
-2. Create a `SKILL.md` file inside the directory. Th file has two parts separated by frontmatter dashes: 
+2. Create a `SKILL.md` file inside the directory. The file has two parts separated by frontmatter dashes: 
 
-```md
---- 
+```markdown
+---
 name: pr-description
 description: Writes pull request descriptions. Use when creating a PR, writing a PR, or when the user asks to summarize changes for a pull request
---- 
+---
 
 When writing a PR description: 
 
-1. run `git diff main...HEAD` to see al changes on this branch
+1. run `git diff main...HEAD` to see all changes on this branch
 2. Write a description in the following format: 
 
-What: 
-one senetence explaining what this PR does 
+**What:** 
+One sentence explaining what this PR does 
 
-Why: 
-Breif context on why this change is needed 
+**Why:** 
+Brief context on why this change is needed 
 
-Changes: 
+**Changes:** 
 - Bullet points of specific changes made 
 - Group related changes together 
 - Mention any files deleted or removed 
@@ -108,10 +112,13 @@ Enterprise -> Personal -> Project -> Plugins
 
 ## Example of `allowed-tools`
 
-```md
+```yaml
 ---
 name: codebase-onboarding 
-description: Helps new developers understand how the codebase works 
+description: Helps new developers understand how the codebase works
+allowed-tools:
+  - Read
+  - Bash
 ---
 ```
 
