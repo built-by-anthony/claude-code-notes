@@ -8,6 +8,14 @@ A personal knowledge base for AI tools and concepts, organized by vendor and top
 - Python 3.7+
 
 ### Installation
+
+Create and activate a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
