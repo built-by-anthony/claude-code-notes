@@ -27,6 +27,8 @@ nav:
   - Home: index.md
   - Anthropic:
     - Claude Code:
+      - Claude Code 101:
+          - anthropic/claude-code/claude-code-101-index.md
       - Agents & Skills:
         - anthropic/claude-code/agents-skills/index.md
         - Creating a Skill: anthropic/claude-code/agents-skills/creating-a-skill.md
@@ -35,5 +37,8 @@ nav:
         - Skills vs. Other Features: anthropic/claude-code/agents-skills/vs-other-features.md
       - Subagents:
         - anthropic/claude-code/subagents/index.md
-        - What are subagents?: anthropic/claude-code/subagents/what-are-subagents.md
+        - What are Subagents?: anthropic/claude-code/subagents/what-are-subagents.md
+        - Creating a Subagent: anthropic/claude-code/subagents/creating-a-subagent.md
+        - Designing Effective Subagents: anthropic/claude-code/subagents/designing-effective-subagents.md
+        - Using Subagents Effectively: anthropic/claude-code/subagents/using-subagents-effectively.md
 
