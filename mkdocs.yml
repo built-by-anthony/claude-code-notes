@@ -35,3 +35,5 @@ nav:
         - Skills vs. Other Features: anthropic/claude-code/agents-skills/vs-other-features.md
       - Subagents:
         - anthropic/claude-code/subagents/index.md
+        - What are subagents?: anthropic/claude-code/subagents/what-are-subagents.md
+
