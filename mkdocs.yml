@@ -1,0 +1,23 @@
+site_name: AI Learning Notes
+site_description: Personal knowledge base for AI tools and concepts
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Anthropic:
+    - Claude Code:
+      - Agents & Skills: anthropic/claude-code/agents-skills.md
