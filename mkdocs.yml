@@ -3,6 +3,11 @@ site_description: Personal knowledge base for AI tools and concepts
 watch:
   - docs
 dev_addr: 127.0.0.1:8000
+
+markdown_extensions:
+  - toc:
+      toc_depth: 1-6
+
 theme:
   name: material
   palette:
@@ -15,12 +20,18 @@ theme:
       primary: blue
       accent: blue
   features:
-    - navigation.expand
     - navigation.indexes
-    - toc.integrate
+    - navigation.sections
 
 nav:
   - Home: index.md
   - Anthropic:
     - Claude Code:
-      - Agents & Skills: anthropic/claude-code/agents-skills.md
+      - Agents & Skills:
+        - anthropic/claude-code/agents-skills/index.md
+        - Creating a Skill: anthropic/claude-code/agents-skills/creating-a-skill.md
+        - "Example: Grilling Skill": anthropic/claude-code/agents-skills/example.md
+        - Configuration & Multi-file Skills: anthropic/claude-code/agents-skills/configuration.md
+        - Skills vs. Other Features: anthropic/claude-code/agents-skills/vs-other-features.md
+      - Subagents:
+        - anthropic/claude-code/subagents/index.md
