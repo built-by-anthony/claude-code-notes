@@ -26,10 +26,7 @@ theme:
 nav:
   - Home: index.md
   - Anthropic:
-    - Claude Code:
-      - Claude Code 101:
-          - anthropic/claude-code/claude-code-101/index.md
-      - Agents & Skills:
+     - Agents & Skills:
         - anthropic/claude-code/agents-skills/index.md
         - Creating a Skill: anthropic/claude-code/agents-skills/creating-a-skill.md
         - "Example: Grilling Skill": anthropic/claude-code/agents-skills/example.md
